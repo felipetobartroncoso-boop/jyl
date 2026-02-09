@@ -1,0 +1,1165 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HERO */
+/* ===========================
+   HERO VISIBLE + ELEGANTE
+=========================== */
+
+.hero {
+    min-height: 320px;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.specs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.specs-list li {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 15px;
+    backdrop-filter: blur(4px);
+}
+
+
+/* TARJETAS */
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+    font-size: 14px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe5d;
+    color: white;
+}
+
+.gallery-img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+.navbar-brand img {
+    object-fit: contain;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url('../img/hero.jpg') center/cover no-repeat;
+    min-height: 60vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 70px; /* evita que lo tape la navbar */
+}
+
+/* Ajustes móvil */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 75vh;
+        text-align: center;
+        padding: 100px 20px 40px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+.btn {
+    padding: 10px 16px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
+
+.card {
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+.modal-dialog {
+    max-width: 95%;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand span {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p, li {
+        font-size: 0.95rem;
+    }
+}
+
+.carousel-img {
+    height: 420px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .carousel-img {
+        height: 240px;
+    }
+}
+
+.carousel-item a {
+    display: block;
+    cursor: pointer;
+}
+
+.carousel-item a:hover img {
+    filter: brightness(0.85);
+    transition: 0.3s;
+}
+
+.carousel-link {
+    position: relative;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.carousel-caption-custom {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    background: rgba(0,0,0,0.55);
+    padding: 15px 20px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.carousel-caption-custom h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-caption-custom p {
+    margin: 5px 0 0;
+    font-size: 1.1rem;
+}
+
+/* EFECTO HOVER */
+.carousel-link:hover img {
+    filter: brightness(0.8);
+    transition: 0.3s;
+}
+
+/* MÓVIL */
+@media (max-width: 768px) {
+    .carousel-caption-custom {
+        bottom: 10%;
+        left: 5%;
+        padding: 10px 14px;
+    }
+
+    .carousel-caption-custom h2 {
+        font-size: 1.4rem;
+    }
+
+    .carousel-caption-custom p {
+        font-size: 0.95rem;
+    }
+}
+
+.carousel-caption-custom .btn {
+    pointer-events: none;
+}
+/* ESTADO INICIAL DEL TEXTO */
+.carousel-item .carousel-caption-custom {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* CUANDO EL SLIDE ESTÁ ACTIVO */
+.carousel-item.active .carousel-caption-custom {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* OVERLAY OSCURO SOBRE EL CARRUSEL */
+.carousel-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+/* ASEGURAR QUE EL TEXTO QUEDE ARRIBA */
+.carousel-caption-custom {
+    position: absolute;
+    z-index: 2;
+}
+
+/* LA IMAGEN QUEDA ABAJO */
+.carousel-link img {
+    display: block;
+    z-index: 0;
+}
+
+/* AL FINAL DE styles.css */
+.carousel-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.navbar {
+    transition: background 0.3s ease;
+}
+
+.navbar-brand span {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    position: relative;
+    font-weight: 500;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-brand span {
+    font-size: 1.15rem;
+    letter-spacing: 0.4px;
+}
+
+.nav-link {
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* BOTÓN WHATSAPP */
+.navbar .btn-success {
+    font-weight: 600;
+    padding: 6px 14px;
+}
+
+.navbar {
+    border-bottom: 3px solid #198754; /* verde tipo WhatsApp */
+}
+
+.nav-link.active {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    width: 100%;
+    background-color: #198754;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #198754;
+    display: block;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 1.7rem;
+    }
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.product-desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product-specs {
+    padding-left: 18px;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.product-specs li {
+    margin-bottom: 4px;
+}
+
+.product-specs li::marker {
+    color: #198754;
+}
+
+.dropdown-menu .dropdown-item {
+    font-size: 0.95rem;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #198754;
+    color: #fff;
+}
+
+.product-item img.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-item .card {
+    overflow: hidden;
+}
+
+.hero-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.specs-list {
+    list-style: none;      /* quita los puntos */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;      /* mantiene todo ordenado */
+}
+
+.specs-list li {
+    padding: 6px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.specs-list li:last-child {
+    border-bottom: none;
+}
+
+.product-description {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+    color: #333;
+}
+
+.product-description p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* ============================
+   ESTILO PREMIUM (NO TOCA HERO)
+============================ */
+
+/* Sección descripción */
+.product-description {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.product-description h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.product-description p {
+    color: #444;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* Tarjetas de productos */
+.card {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+/* Botón WhatsApp */
+.btn-success {
+    padding: 14px 38px;
+    font-size: 1.1rem;
+    border-radius: 40px;
+    box-shadow: 0 10px 25px rgba(25, 135, 84, 0.35);
+}
+
+/* ============================
+   FILTRO DE CATEGORÍAS – MEJORA VISUAL
+   ============================ */
+
+.filtro-btn {
+    border-radius: 999px; /* efecto pill */
+    padding: 8px 18px;
+    font-weight: 500;
+    transition: 
+        background-color 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.2s ease;
+}
+
+/* Hover */
+.filtro-btn:hover {
+    background-color: #198754; /* verde bootstrap */
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(25, 135, 84, 0.25);
+}
+
+/* Botón activo */
+.filtro-btn.active {
+    background-color: #198754;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(25, 135, 84, 0.35);
+    border-color: #198754;
+}
+
+/* Evita que el hover “apague” el active */
+.filtro-btn.active:hover {
+    transform: none;
+}
+
+@media (max-width: 576px) {
+    .filtro-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* FILTRO – GRAFITO */
+.filtro-btn {
+    border-color: #2b2b2b;
+    color: #2b2b2b;
+}
+
+.filtro-btn:hover,
+.filtro-btn.active {
+    background-color: #2b2b2b;
+    border-color: #2b2b2b;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   CARRUSEL – VERSIÓN MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    /* Reduce altura visual */
+    .carousel-img {
+        height: 55vh;
+        object-fit: cover;
+    }
+
+    /* Ajuste general del caption */
+    .carousel-caption-custom {
+        padding: 12px;
+        bottom: 10%;
+        text-align: center;
+    }
+
+    /* Título más compacto */
+    .carousel-caption-custom h2 {
+        font-size: 1.4rem;
+        margin-bottom: 4px;
+    }
+
+    /* ❌ Oculta descripción en mobile */
+    .carousel-caption-custom p {
+        display: none;
+    }
+
+    /* Botón más grande para el dedo */
+    .carousel-caption-custom .btn {
+        font-size: 0.85rem;
+        padding: 6px 14px;
+    }
+
+    /* Indicadores más visibles */
+    .carousel-indicators button {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* ===============================
+   BOTONES DE PRODUCTO – ESTILO PRO
+================================ */
+
+.card-footer {
+    display: flex;
+    gap: 12px;
+    background: #fff;
+}
+
+/* Estilo base para ambos botones */
+.card-footer .btn {
+    flex: 1;
+    height: 44px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;        /* misma forma */
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-transform: none;
+
+    transition: all 0.25s ease;
+}
+
+/* WhatsApp */
+.card-footer .btn-success {
+    background-color: #25d366;
+    border: none;
+}
+
+.card-footer .btn-success:hover {
+    background-color: #1ebe5d;
+}
+
+/* Botón secundario */
+.card-footer .btn-outline-dark {
+    border: 1px solid #333;
+    color: #333;
+    background-color: #fff;
+}
+
+.card-footer .btn-outline-dark:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .card-footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-footer .btn {
+        height: 52px;        /* más alto */
+        font-size: 1rem;     /* texto un poco más grande */
+    }
+}
+
+
+@media (max-width: 576px) {
+    .card-footer .btn {
+        letter-spacing: 0.3px;
+    }
+}
+
+
+.card-footer .btn i {
+    font-size: 1rem;
+    margin-right: 6px;
+    line-height: 1;
+}
+
+
+@media (max-width: 576px) {
+    .card-footer .btn {
+        padding: 13px 16px;
+        font-size: 0.97rem;
+    }
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    border-color: #25D366;
+    color: #fff;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1EBE57;
+    border-color: #1EBE57;
+    color: #fff;
+}
+
+.btn-whatsapp:focus {
+    box-shadow: 0 0 0 0.25rem rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+
+
+.floating-actions {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.floating-btn {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Botón WhatsApp redondo */
+.floating-whatsapp {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Botón Catálogo */
+.floating-catalogo {
+    border-radius: 30px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+.whatsapp-float-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+/* Botón catálogo (arriba) */
+.catalogo-float {
+    background-color: #212529;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+}
+
+.catalogo-float:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Contenedor */
+.whatsapp-float-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+/* Asegura que el botón WhatsApp NO sea fixed dentro */
+.whatsapp-float {
+    position: relative;   /* clave */
+    z-index: 2;
+}
+
+/* Botón Catálogo encima */
+.catalogo-float {
+    position: relative;
+    z-index: 3;
+    background-color: #212529;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+}
+
+.catalogo-float:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* CONTENEDOR FLOTANTE */
+.whatsapp-float-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+/* NEUTRALIZA EL FIXED DEL BOTÓN ORIGINAL */
+.whatsapp-float {
+    position: relative !important;
+    bottom: auto !important;
+    right: auto !important;
+    z-index: 2;
+}
+
+/* BOTÓN CATÁLOGO (ARRIBA) */
+.catalogo-float {
+    position: relative;
+    z-index: 3;
+    background-color: #212529;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+}
+
+.catalogo-float:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.page-fade {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.whatsapp-float {
+    animation: pulseWhatsapp 2.5s infinite;
+}
+
+@keyframes pulseWhatsapp {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.card img {
+    border-radius: 12px;
+    background-color: #f8f9fa;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+/* =====================================
+   ANIMACIÓN SUAVE BOTONES FLOTANTES
+   ===================================== */
+
+/* Estado inicial */
+.whatsapp-float-container {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: floatFadeIn 0.6s ease forwards;
+    animation-delay: 0.4s;
+}
+
+/* Botón Catálogo entra primero */
+.catalogo-float {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: floatBtnIn 0.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+/* Botón WhatsApp entra después */
+.whatsapp-float {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: floatBtnIn 0.5s ease forwards;
+    animation-delay: 0.65s;
+}
+
+/* Keyframes */
+@keyframes floatFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatBtnIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   SECCIÓN
+========================= */
+.recomendados {
+    padding: 60px 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.recomendados h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* =========================
+   VIEWPORT (RECORTA IMÁGENES)
+========================= */
+.slider-viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* =========================
+   SLIDER
+========================= */
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    gap: 30px;
+
+    scroll-snap-type: x mandatory;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* =========================
+   ITEMS
+========================= */
+.slider-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.slider-item img {
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.slider-item img:hover {
+    transform: scale(1.03);
+}
+
+.slider-item p {
+    margin-top: 15px;
+    font-size: 1.05rem;
+    color: #555;
+}
+
+/* =========================
+   FLECHAS
+========================= */
+.slider-btn {
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 26px;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    opacity: 0.4;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.slider-btn:hover {
+    opacity: 1;
+    color: #333;
+}
+
+.slider-btn.left {
+    left: -10px;
+}
+
+.slider-btn.right {
+    right: -10px;
+}
+
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Desktop grande → 4 visibles */
+@media (min-width: 1200px) {
+    .slider-item {
+        width: calc(25% - 22.5px);
+    }
+}
+
+/* Laptop / tablet → 3 visibles */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .slider-item {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Móvil → 2 visibles exactos */
+@media (max-width: 767px) {
+    .slider {
+        gap: 20px;
+    }
+
+    .slider-item {
+        width: calc(50% - 10px);
+    }
+}
+
+
+.carousel-action {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.carousel-btn {
+    display: inline-block;
+    padding: 10px 26px;
+    font-size: 0.95rem;
+    color: #4b7fb4;
+    text-decoration: none;
+    border: 1px solid #4b7fb4;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.carousel-btn:hover {
+    background: #4b7fb4;
+    color: #ffffff;
+}
+
+.slider {
+    display: flex;
+    gap: 30px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    justify-content: flex-start; /* 👈 default correcto */
+}
+
+.section-title {
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    text-align: center;
+    line-height: 1.2;
+    padding: 0 15px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 1.4rem;
+    }
+}
+

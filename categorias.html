@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Categorías | Catálogo de productos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<div class="whatsapp-float-container">
+
+    <!-- BOTÓN WHATSAPP (EL TUYO, SIN CAMBIOS) -->
+    <a href="https://wa.me/56931018433?text=Hola,%20quiero%20más%20información%20sobre%20sus%20productos"
+       class="whatsapp-float"
+       target="_blank">
+        <i class="bi bi-whatsapp me-2"></i>Whatsapp
+    </a>
+
+</div>
+<body class="page-fade">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="img/logo.png" alt="Logo Revestimientos PVC" height="36" class="me-2">
+            <span class="fw-semibold">J&L Decoración y Construcción</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="https://wa.me/56931018433"
+               class="btn btn-success ms-lg-3 mt-3 mt-lg-0">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+    </div>
+</nav>
+
+<!-- ================= CONTENIDO ================= -->
+<div class="container my-5">
+
+    <!-- TÍTULO -->
+    <div class="text-center mb-4">
+        <h2 class="fw-bold">Catálogo de productos</h2>
+        <p class="text-muted">Filtra por categoría o busca el producto que necesitas</p>
+    </div>
+
+    <!-- BOTONES DE CATEGORÍA -->
+    <div class="d-flex justify-content-center mb-4 flex-wrap gap-2">
+        <button class="btn btn-outline-success filtro-btn active" data-categoria="">
+            Todos
+        </button>
+        <button class="btn btn-outline-success filtro-btn" data-categoria="interior">
+            Revestimientos interior
+        </button>
+        <button class="btn btn-outline-success filtro-btn" data-categoria="exterior">
+            Revestimientos exterior
+        </button>
+        <button class="btn btn-outline-success filtro-btn" data-categoria="pisos">
+            Pisos
+        </button>
+        <button class="btn btn-outline-success filtro-btn" data-categoria="tableros">
+            Tableros
+        </button>
+        <button class="btn btn-outline-success filtro-btn" data-categoria="aislacion">
+            Aislaciones
+        </button>
+        <button class="btn btn-outline-success filtro-btn" data-categoria="terminacion">
+            Terminaciones
+        </button>
+        <button class="btn btn-outline-success filtro-btn" data-categoria="accesorios">
+            Accesorios
+        </button>
+    </div>
+
+    <!-- BUSCADOR -->
+    <div class="row mb-4">
+        <div class="col-md-6 mx-auto">
+            <input
+                type="text"
+                id="buscador"
+                class="form-control"
+                placeholder="Buscar producto..."
+            >
+        </div>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <div class="row" id="productosContainer">
+
+        <!-- PRODUCTO 1 Wall Panel-->
+        <div class="col-md-4 mb-4 product-item producto"
+            data-nombre="wall panel pvc"
+            data-descripcion="revestimiento decorativo moderno para muros interiores"
+            data-categoria="interior"
+            data-type="wallpanel">
+
+            <div class="card h-100">
+
+                <img src="img/Nuevas Imagenes/wall panel/wall panel (14).jpg"
+                    class="card-img-top"
+                    alt="Wall panel PVC decorativo para muros interiores">
+
+                <div class="card-body">
+                    <h5 class="product-title">Wall Panel PVC</h5>
+
+                    <p class="product-desc">
+                        Revestimiento decorativo moderno, ideal para muros interiores.
+                        Fácil mantención, resistente a la humedad y con excelente terminación.
+                    </p>
+
+                    <ul class="product-specs">
+                        <li>Largo: 240 cm</li>
+                        <li>Ancho 1: 16,8 cm — Espesor: 24 mm</li>
+                        <li>Ancho 2: 15,5 cm — Espesor: 17 mm</li> 
+                        <li>Material: PVC nuevo</li>
+                    </ul>
+                </div>
+
+                <div class="card-footer text-center bg-white">
+                    <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20el%20Wall%20Panel%20PVC"
+                    class="btn btn-whatsapp"
+
+                    target="_blank">
+                        <i class="bi bi-whatsapp me-2"></i>Whatsapp
+                    </a>
+
+                    <a href="Productos/wallpanel.html" class="btn btn-outline-dark">
+                        Diseños disponibles
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PRODUCTO 2 Piso Spc-->
+        <div class="col-md-4 mb-4 product-item producto"
+            data-nombre="Piso SPC"
+            data-descripcion="Piso vinílico rígido resistente al agua y de alta durabilidad"
+            data-categoria="pisos"
+            data-type="pisos">
+
+            <div class="card h-100">
+
+                <img src="img/Nuevas Imagenes/piso spc/spc (1).jpg"
+                    class="card-img-top"
+                    alt="Piso SPC resistente al agua para interiores">
+
+                <div class="card-body">
+                    <h5 class="product-title">Piso SPC</h5>
+
+                    <p class="product-desc">
+                        Piso vinílico de núcleo rígido (SPC), ideal para interiores de alto tránsito.
+                        Ofrece gran resistencia a la humedad, estabilidad dimensional y una terminación
+                        moderna y elegante.
+                    </p>
+
+                    <ul class="product-specs">
+                        <li>Cobertura: 2 m² por caja</li>
+                        <li>Espesor: 5.8 mm</li>
+                        <li>Material: SPC (Stone Plastic Composite)</li>
+                        <li>Uso: Interior</li>
+                    </ul>
+                </div>
+
+                <div class="card-footer text-center bg-white">
+                    <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20el%20Piso%20SPC"
+                    class="btn btn-whatsapp"
+
+                    target="_blank">
+                        <i class="bi bi-whatsapp me-2"></i>Whatsapp
+                    </a>
+
+                    <a href="/Productos/spc.html" class="btn btn-outline-dark">
+                        Diseños disponibles
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+<!-- PRODUCTO 3 DECK-->
+        <div class="col-md-4 mb-4 product-item producto"
+            data-nombre="Deck"
+            data-descripcion="Revestimiento tipo deck para exteriores, resistente y de alta durabilidad"
+            data-categoria="pisos"
+            data-type="exterior">
+
+            <div class="card h-100">
+
+                <img src="img/Deck/principal.jpg"
+                    class="card-img-top"
+                    alt="Deck para exterior resistente a la intemperie">
+
+                <div class="card-body">
+                    <h5 class="product-title">Deck</h5>
+
+                    <p class="product-desc">
+                        Revestimiento tipo deck ideal para terrazas, patios y espacios exteriores.
+                        Fabricado con materiales de alta resistencia, soporta humedad, sol y uso continuo,
+                        manteniendo su apariencia por más tiempo.
+                    </p>
+
+                    <ul class="product-specs">
+                        <li>Medidas: 14 x 240 cm</li>
+                        <li>Espesor: 25 mm</li>
+                        <li>Material: PVC / Compuesto</li>
+                        <li>Uso: Exterior</li>
+                    </ul>
+                </div>
+
+                <div class="card-footer text-center bg-white">
+                    <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20el%20Deck"
+                    class="btn btn-whatsapp"
+
+                    target="_blank">
+                        <i class="bi bi-whatsapp me-2"></i>Whatsapp
+                    </a>
+
+                    <a href="Productos/deck.html" class="btn btn-outline-dark">
+                        Diseños disponibles
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+<!-- PRODUCTO 4 Metal Siding-->
+        <div class="col-md-4 mb-4 product-item producto"
+            data-nombre="Metal Siding"
+            data-descripcion="Revestimiento metálico exterior de alta resistencia y diseño moderno"
+            data-categoria="exterior"
+            data-type="exterior">
+
+            <div class="card h-100">
+
+                <img src="img/Metalsiding/metal siding (1).jpg"
+                    class="card-img-top"
+                    alt="Metal Siding revestimiento metálico exterior">
+
+                <div class="card-body">
+                    <h5 class="product-title">Metal Siding</h5>
+
+                    <p class="product-desc">
+                        Revestimiento metálico de alta durabilidad, ideal para fachadas exteriores.
+                        Brinda un acabado moderno, resistente a la intemperie y de bajo mantenimiento.
+                    </p>
+
+                    <ul class="product-specs">
+                        <li>Medidas: 38.5 x 380 cm</li>
+                        <li>Espesor: 16 mm</li>
+                        <li>Material: Acero prepintado</li>
+                        <li>Uso: Exterior</li>
+                    </ul>
+                </div>
+
+                <div class="card-footer text-center bg-white">
+                    <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20el%20Metal%20Siding"
+                    class="btn btn-whatsapp"
+
+                    target="_blank">
+                        <i class="bi bi-whatsapp me-2"></i>Whatsapp
+                    </a>
+
+                    <a href="/Productos/metalsiding.html" class="btn btn-outline-dark">
+                        Diseños disponibles
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+<!-- PRODUCTO 5 Planchas de Bambu-->
+        <div class="col-md-4 mb-4 product-item producto"
+            data-nombre="Planchas de Bambú"
+            data-descripcion="Revestimiento natural y ecológico para interiores con excelente terminación"
+            data-categoria="interior"
+            data-type="interior">
+
+            <div class="card h-100">
+
+                <img src="img/Bambu/Bambu 5 (1).jpg"
+                    class="card-img-top"
+                    alt="Planchas de bambú decorativas para muros interiores">
+
+                <div class="card-body">
+                    <h5 class="product-title">Planchas de Bambú</h5>
+
+                    <p class="product-desc">
+                        Revestimiento natural fabricado en bambú, ideal para dar un acabado cálido,
+                        elegante y sustentable a muros interiores. Aporta diseño y resistencia en
+                        ambientes residenciales o comerciales.
+                    </p>
+
+                    <ul class="product-specs">
+                        <li>Medidas: 122 x 244 cm</li>
+                        <li>Espesor: 5 mm</li>
+                        <li>Material: Bambú natural</li>
+                        <li>Uso: Interior</li>
+                    </ul>
+                </div>
+
+                <div class="card-footer text-center bg-white">
+                    <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20las%20Planchas%20de%20Bambú"
+                    class="btn btn-whatsapp"
+
+                    target="_blank">
+                        <i class="bi bi-whatsapp me-2"></i>Whatsapp
+                    </a>
+
+                    <a href="/Productos/bambu.html" class="btn btn-outline-dark">
+                        Diseños disponibles
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+<!-- PRODUCTO 6 Planchas de PVC-->
+        <div class="col-md-4 mb-4 product-item producto"
+            data-nombre="Planchas de PVC"
+            data-descripcion="Revestimiento liviano y resistente ideal para muros y cielos interiores"
+            data-categoria="interior"
+            data-type="interior">
+
+            <div class="card h-100">
+
+                <img src="img/Pvc/Pvc marmol 5 (3).jpg"
+                    class="card-img-top"
+                    alt="Planchas de PVC decorativas para muros y cielos">
+
+                <div class="card-body">
+                    <h5 class="product-title">Planchas de PVC</h5>
+
+                    <p class="product-desc">
+                        Revestimiento versátil y funcional, ideal para muros y cielos interiores.
+                        Fabricado en PVC de alta calidad, resistente a la humedad, fácil de limpiar
+                        y de rápida instalación.
+                    </p>
+
+                    <ul class="product-specs">
+                        <li>Medidas: 122 x 244 cm</li>
+                        <li>Espesor: 3 mm</li>
+                        <li>Material: PVC</li>
+                        <li>Uso: Interior</li>
+                    </ul>
+                </div>
+
+                <div class="card-footer text-center bg-white">
+                    <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20las%20Planchas%20de%20PVC"
+                    class="btn btn-whatsapp"
+
+                    target="_blank">
+                        <i class="bi bi-whatsapp me-2"></i>Whatsapp
+                    </a>
+
+                    <a href="/Productos/pvc.html" class="btn btn-outline-dark">
+                        Diseños disponibles
+                    </a>
+                </div>
+            </div>
+        </div>
+
+<!-- PRODUCTO 7 wall penel liso -->
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Wall Panel Liso"
+     data-descripcion="Revestimiento decorativo liso para muros interiores"
+     data-categoria="interior"
+     data-type="revestimiento">
+
+    <div class="card h-100">
+
+        <img src="img/wallpanel_liso/color_2.jpg"
+             class="card-img-top"
+             alt="Wall Panel Liso 40 cm">
+
+        <div class="card-body">
+            <h5 class="product-title">Wall Panel Liso</h5>
+
+            <p class="product-desc">
+                Revestimiento decorativo de diseño liso, ideal para interiores modernos.
+                Aporta una terminación limpia, elegante y de fácil mantenimiento.
+            </p>
+
+            <ul class="product-specs">
+                <li>Largo: 240 cm</li>
+                <li>Ancho: 40 cm</li>
+                <li>Espesor: 9 mm</li>
+                <li>Material: PVC</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20el%20Wall%20Panel%20Liso%20de%2040%20cm"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/wallpanel_liso.html" class="btn btn-outline-dark">
+                Diseños Disponibles
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 8 PVC Cielo  -->
+
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Cielo PVC"
+     data-descripcion="Revestimiento de cielo en PVC resistente y de fácil instalación"
+     data-categoria="interior"
+     data-type="revestimiento">
+
+    <div class="card h-100">
+
+        <img src="img/cielo/cielo (2).jpg"
+             class="card-img-top"
+             alt="Cielo PVC decorativo">
+
+        <div class="card-body">
+            <h5 class="product-title">Cielo PVC</h5>
+
+            <p class="product-desc">
+                Revestimiento para cielos interiores fabricado en PVC, ideal para espacios
+                que requieren una solución liviana, resistente a la humedad y de fácil mantención.
+            </p>
+
+            <ul class="product-specs">
+                <li>Largo: 3,80 m</li>
+                <li>Ancho: 30 cm</li>
+                <li>Espesor: 9 mm</li>
+                <li>Material: PVC</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20el%20cielo%20PVC"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="Productos/cielo_pvc.html" class="btn btn-outline-dark">
+                Diseños Disponibles
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 9 Planchas de OSB -->
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Planchas de OSB"
+     data-descripcion="Tablero estructural resistente ideal para construcción y revestimientos"
+     data-categoria="tableros"
+     data-type="exterior">
+
+    <div class="card h-100">
+
+        <img src="img/Osb/osb 9,5mm (2).jpg"
+             class="card-img-top"
+             alt="Planchas OSB para construcción y revestimiento">
+
+        <div class="card-body">
+            <h5 class="product-title">Planchas de OSB</h5>
+
+            <p class="product-desc">
+                Tablero estructural de virutas de madera orientadas, ideal para aplicaciones
+                en construcción, revestimientos y proyectos estructurales. Ofrece alta resistencia,
+                estabilidad y durabilidad.
+            </p>
+
+            <ul class="product-specs">
+                <li>Medidas: 122 x 244 cm</li>
+                <li>Espesor: 9,5 mm</li>
+                <li>Material: Madera OSB prensada</li>
+                <li>Uso: Interior y exterior</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20las%20Planchas%20de%20OSB"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="Productos/osb.html" class="btn btn-outline-dark">
+                Ver
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO Terciado Estructural 10 -->
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Terciado Estructural"
+     data-descripcion="Placa estructural para construcción"
+     data-categoria="tableros"
+     data-type="madera">
+
+    <div class="card h-100">
+
+        <img src="img/Nuevas Imagenes/tableros/terciado (1).jpg"
+             class="card-img-top"
+             alt="Terciado Estructural">
+
+        <div class="card-body">
+            <h5 class="product-title">Terciado Estructural</h5>
+
+            <p class="product-desc">
+                Terciado diseñado para soportar cargas,
+                ideal para muros, pisos, techumbres y estructuras.
+            </p>
+
+            <ul class="product-specs">
+                <li>Espesores: 9 / 12 / 15 / 18 mm</li>
+                <li>Uso: Estructural</li>
+                <li>Aplicación: Interior y exterior</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20quiero%20cotizar%20terciado%20estructural"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/terciado_estructural.html" class="btn btn-outline-dark">
+                Ver Opciones
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO Terciado Ranurado 11 -->
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Terciado Ranurado"
+     data-descripcion="Revestimiento decorativo ranurado"
+     data-categoria="tableros"
+     data-type="madera">
+
+    <div class="card h-100">
+
+        <img src="img/Nuevas Imagenes/tableros/terciado (2).jpg"
+             class="card-img-top"
+             alt="Terciado Ranurado">
+
+        <div class="card-body">
+            <h5 class="product-title">Terciado Ranurado</h5>
+
+            <p class="product-desc">
+                Terciado ranurado decorativo, ideal para revestimientos
+                interiores en muros y cielos.
+            </p>
+
+            <ul class="product-specs">
+                <li>Espesores: 9 y 12 mm</li>
+                <li>Uso: Decorativo</li>
+                <li>Aplicación: Interior</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20quiero%20cotizar%20terciado%20ranurado"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/terciado_ranurado.html" class="btn btn-outline-dark">
+                Ver Opciones
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 12 Volcanita -->
+
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Volcanita 10 mm"
+     data-descripcion="Placa de yeso-cartón para tabiquería y revestimientos interiores"
+     data-categoria="interior"
+     data-type="revestimiento">
+
+    <div class="card h-100">
+
+        <img src="img/volcanita/volcanita.jpg"
+             class="card-img-top"
+             alt="Volcanita 10 mm">
+
+        <div class="card-body">
+            <h5 class="product-title">Volcanita</h5>
+
+            <p class="product-desc">
+                Placa de yeso-cartón ideal para muros y cielos interiores. 
+                Ofrece buena resistencia, terminación lisa y facilidad de instalación.
+            </p>
+
+            <ul class="product-specs">
+                <li>Espesor: 10 mm</li>
+                <li>Ideal para tabiques y cielos</li>
+                <li>Fácil de cortar y montar</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20la%20volcanita%20de%2010mm"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/volcanita.html" class="btn btn-outline-dark">
+                Ver
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 13 internit -->
+
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Internit"
+     data-descripcion="Placa de fibrocemento para uso interior y exterior"
+     data-categoria="exterior,interior"
+     data-type="revestimiento">
+
+    <div class="card h-100">
+
+        <img src="img/internit/internit.jpg"
+             class="card-img-top"
+             alt="Internit 6mm">
+
+        <div class="card-body">
+            <h5 class="product-title">Internit</h5>
+
+            <p class="product-desc">
+                Placa de fibrocemento de alta resistencia, ideal para muros, cielos y aplicaciones
+                interiores o exteriores. Soporta humedad, golpes y condiciones exigentes.
+            </p>
+
+            <ul class="product-specs">
+                <li>Espesor: 5 mm</li>
+                <li>Material: Fibrocemento</li>
+                <li>Uso interior y exterior</li>
+                <li>Alta resistencia y durabilidad</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20el%20internit%20de%2010mm"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/internit.html" class="btn btn-outline-dark">
+                Ver
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- PRODUCTO 14 Zinc en V -->
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Zinc en V"
+     data-descripcion="Plancha de zinc en V para techumbres y cierres"
+     data-categoria="exterior"
+     data-type="techumbre">
+
+    <div class="card h-100">
+
+        <img src="img/Nuevas Imagenes/Zinc/zinc (7).jpg"
+             class="card-img-top"
+             alt="Zinc en V 2.5 m">
+
+        <div class="card-body">
+            <h5 class="product-title">Zinc en V</h5>
+
+            <p class="product-desc">
+                Plancha de zinc en V ideal para techumbres, cierres y galpones.
+                Diseño que mejora el escurrimiento del agua y la resistencia.
+            </p>
+
+            <ul class="product-specs">
+                <li>Ancho: 89,5 cm</li>
+                <li>Largo: 2,5 m</li>
+                <li>Espesor: 0,35 mm</li>
+                <li>Uso: Exterior</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20quiero%20cotizar%20zinc%20en%20V"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/zinc_v.html" class="btn btn-outline-dark">
+                Ver Opciones
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 15 Zinc Liso -->
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Zinc Liso"
+     data-descripcion="Plancha de zinc lisa para hojalatería y revestimientos"
+     data-categoria="exterior"
+     data-type="techumbre">
+
+    <div class="card h-100">
+
+        <img src="img/Nuevas Imagenes/Zinc/zinc (6).jpg"
+             class="card-img-top"
+             alt="Zinc Liso 1 x 3 m">
+
+        <div class="card-body">
+            <h5 class="product-title">Zinc Liso</h5>
+
+            <p class="product-desc">
+                Plancha de zinc lisa, ideal para hojalatería, canaletas
+                y trabajos personalizados de revestimiento.
+            </p>
+
+            <ul class="product-specs">
+                <li>Ancho: 1 m</li>
+                <li>Largo: 3 m</li>
+                <li>Espesor: 0,4 mm</li>
+                <li>Uso: Exterior</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20quiero%20cotizar%20zinc%20liso"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/zinc_liso.html" class="btn btn-outline-dark">
+                Ver Opciones
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 16 Zinc Acanalado -->
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Zinc Acanalado"
+     data-descripcion="Plancha de zinc acanalado para techumbres"
+     data-categoria="exterior"
+     data-type="techumbre">
+
+    <div class="card h-100">
+
+        <img src="img/Nuevas Imagenes/Zinc/zinc (8).jpg"
+             class="card-img-top"
+             alt="Zinc Acanalado 3.66 m">
+
+        <div class="card-body">
+            <h5 class="product-title">Zinc Acanalado</h5>
+
+            <p class="product-desc">
+                Plancha de zinc acanalado clásica para techumbres,
+                resistente y con excelente evacuación de agua.
+            </p>
+
+            <ul class="product-specs">
+                <li>Largo: 3,66 m</li>
+                <li>Ancho: 86 cm</li>
+                <li>Espesor: 0,35 mm</li>
+                <li>Uso: Exterior</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20quiero%20cotizar%20zinc%20acanalado"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/zinc_acanalado.html" class="btn btn-outline-dark">
+                Ver
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 17 Membranas -->
+ <div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Membrana Hidrófuga"
+     data-descripcion="Membrana respirable que permite la salida del vapor, evita condensación y humedad, y prolonga la vida útil de muros y techos"
+     data-categoria="aislacion"
+     data-type="exterior">
+
+    <div class="card h-100">
+
+        <img src="img/membrana/membrana (1).jpg"
+             class="card-img-top"
+             alt="Membrana hidrófuga para muros y techumbres">
+
+        <div class="card-body">
+            <h5 class="product-title">Membrana Hidrófuga</h5>
+
+            <p class="product-desc">
+                Membrana respirable que permite la salida del vapor hacia el exterior,
+                evitando la acumulación de humedad en muros y techos. Previene la
+                condensación y la formación de hongos, prolongando la vida útil de
+                las estructuras.
+            </p>
+
+            <ul class="product-specs">
+                <li>Cobertura: 37,5 m² o 75 m²</li>
+                <li>Formato: Rollo</li>
+                <li>Función: Protección contra humedad y filtraciones</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20la%20Membrana%20Hidrófuga"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/membrana.html" class="btn btn-outline-dark">
+                Ver Opciones
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 18 Aislapol -->
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Aislapol 50 mm"
+     data-descripcion="Placa aislante térmica liviana y eficiente para muros y techos"
+     data-categoria="aislacion"
+     data-type="aislacion">
+
+    <div class="card h-100">
+
+        <img src="img/Aislapol/aislapol (1).jfif"
+             class="card-img-top"
+             alt="Aislapol 50 mm aislante térmico">
+
+        <div class="card-body">
+            <h5 class="product-title">Aislapol</h5>
+
+            <p class="product-desc">
+                Aislante térmico liviano y eficiente, ideal para mejorar el confort térmico en muros y techumbres.
+                Fabricado en poliestireno expandido, ofrece excelente aislación y fácil instalación.
+            </p>
+
+            <ul class="product-specs">
+                <li>Espesor: 50 mm</li>
+                <li>Formato: Placa</li>
+                <li>Material: Poliestireno expandido (EPS)</li>
+                <li>Cobertura: 6 m² por bulto</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20estoy%20interesado%20en%20el%20Aislapol%2050mm"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/aislapol.html" class="btn btn-outline-dark">
+                Ver
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 19 Cornisas de aislapol -->
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Cornisas de Aislapol"
+     data-descripcion="Elemento de terminación liviano para unión muro-cielo"
+     data-categoria="terminacion"
+     data-type="terminacion">
+
+    <div class="card h-100">
+
+        <img src="img/cornizas/cornizas (1).jpg"
+             class="card-img-top"
+             alt="Cornisas de aislapol para terminación interior">
+
+        <div class="card-body">
+            <h5 class="product-title">Cornisas de Aislapol</h5>
+
+            <p class="product-desc">
+                Elemento de terminación liviano y funcional, ideal para la unión entre muro y cielo.
+                Fabricadas en aislapol, permiten una instalación rápida, prolija y con excelente acabado decorativo.
+            </p>
+
+            <ul class="product-specs">
+                <li>Medidas: 43 x 43 mm</li>
+                <li>Medidas: 50 x 40 mm</li>
+                <li>Largo: 2 metros</li>
+                <li>Material: Poliestireno expandido (Aislapol)</li>
+                <li>Uso: Interior</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20las%20Cornisas%20de%20Aislapol"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/corniza_aislapol.html" class="btn btn-outline-dark">
+                Ver Opciones
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 20 nariz de grada -->
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Nariz de Grada"
+     data-descripcion="Perfil de terminación para bordes de escalones, seguro y resistente"
+     data-categoria="terminacion"
+     data-type="terminacion">
+
+    <div class="card h-100">
+
+        <img src="img/Nariz de grada/nariz de grada (1).jpg"
+             class="card-img-top"
+             alt="Nariz de grada para escalones">
+
+        <div class="card-body">
+            <h5 class="product-title">Nariz de Grada</h5>
+
+            <p class="product-desc">
+                Perfil de terminación diseñado para proteger y reforzar los bordes de escalones.
+                Entrega mayor seguridad, durabilidad y un acabado profesional en todo tipo de superficies.
+            </p>
+
+            <ul class="product-specs">
+                <li>Medida estándar: 2,40 m</li>
+                <li>Material: PVC / Aluminio</li>
+                <li>Uso: Interior</li>
+                <li>Función: Terminación y protección de escalones</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20la%20Nariz%20de%20Grada"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/nariz_grada.html" class="btn btn-outline-dark">
+                Ver
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 21 cubre Junta de pino finger -->
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Cubrejunta de Pino Finger"
+     data-descripcion="Perfil de terminación en madera para uniones y encuentros de superficies"
+     data-categoria="terminacion"
+     data-type="terminacion">
+
+    <div class="card h-100">
+
+        <img src="img/Pino Finger/cubrejunta.jpg"
+             class="card-img-top"
+             alt="Cubrejunta de pino finger para terminaciones">
+
+        <div class="card-body">
+            <h5 class="product-title">Cubrejunta de Pino Finger</h5>
+
+            <p class="product-desc">
+                Perfil de terminación fabricado en pino finger, ideal para cubrir uniones entre muros,
+                paneles o revestimientos. Ofrece un acabado limpio, resistente y de aspecto natural.
+            </p>
+
+            <ul class="product-specs">
+                <li>Medida: 28 mm</li>
+                <li>Largo: 3 metros</li>
+                <li>Material: Pino Finger</li>
+                <li>Uso: Terminación interior</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20la%20Cubrejunta%20de%20Pino%20Finger"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/cubre_junta_pino.html" class="btn btn-outline-dark">
+                Ver
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 22 rodones de pino finger -->
+
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Rodón de Pino Finger"
+     data-descripcion="Elemento de terminación decorativo para muros y cielos"
+     data-categoria="terminacion"
+     data-type="terminacion">
+
+    <div class="card h-100">
+
+        <img src="img/Pino Finger/rodon.jpg"
+             class="card-img-top"
+             alt="Rodón de pino finger para terminaciones interiores">
+
+        <div class="card-body">
+            <h5 class="product-title">Rodón de Pino Finger</h5>
+
+            <p class="product-desc">
+                Elemento decorativo de terminación fabricado en pino finger, ideal para dar
+                un acabado elegante entre muros y cielos. Aporta continuidad visual y un
+                estilo clásico en espacios interiores.
+            </p>
+
+            <ul class="product-specs">
+                <li>Medida: 20*20 mm</li>
+                <li>Largo: 3 metros</li>
+                <li>Material: Pino Finger</li>
+                <li>Uso: Terminación interior</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20el%20Rodón%20de%20Pino%20Finger"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="Productos/rodones_pino.html" class="btn btn-outline-dark">
+                Ver
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 23 media caña de pino finger -->
+
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Media Caña de Pino Finger"
+     data-descripcion="Perfil de terminación decorativo fabricado en pino finger"
+     data-categoria="terminacion"
+     data-type="terminacion">
+
+    <div class="card h-100">
+
+        <img src="img/Pino Finger/media caña.jpg"
+             class="card-img-top"
+             alt="Media caña de pino finger para terminaciones interiores">
+
+        <div class="card-body">
+            <h5 class="product-title">Media Caña de Pino Finger</h5>
+
+            <p class="product-desc">
+                Perfil decorativo fabricado en pino finger, ideal para rematar encuentros entre muros
+                y cielos. Aporta un acabado limpio, elegante y de alta calidad en espacios interiores.
+            </p>
+
+            <ul class="product-specs">
+                <li>Medidas: 20 x 20 mm</li>
+                <li>Largo: 3 metros</li>
+                <li>Material: Pino Finger</li>
+                <li>Uso: Terminación interior</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20la%20Media%20Caña%20de%20Pino%20Finger"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="Productos/media_caña_pino.html" class="btn btn-outline-dark">
+                Ver
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 24 guardapolvo de pino finger de 3" y de 2"  -->
+
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Guardapolvo de Pino Finger"
+     data-descripcion="Perfil de terminación para muros y pisos fabricado en pino finger"
+     data-categoria="terminacion"
+     data-type="terminacion">
+
+    <div class="card h-100">
+
+        <img src="img/Pino Finger/guardapolvo.jpg"
+             class="card-img-top"
+             alt="Guardapolvo de pino finger para terminaciones interiores">
+
+        <div class="card-body">
+            <h5 class="product-title">Guardapolvo de Pino Finger</h5>
+
+            <p class="product-desc">
+                Elemento de terminación fabricado en pino finger, ideal para proteger y embellecer
+                la unión entre muro y piso. Aporta un acabado limpio, resistente y de estilo clásico.
+            </p>
+
+            <ul class="product-specs">
+                <li>Medidas disponibles: 2” y 3”</li>
+                <li>Largo: 3 metros</li>
+                <li>Material: Pino Finger</li>
+                <li>Uso: Terminación interior</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20el%20Guardapolvo%20de%20Pino%20Finger"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/guardapolvo_pino.html" class="btn btn-outline-dark">
+                Ver Opciones
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 25 esquinero de madera o pino finger -->
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Esquinero de Pino Finger"
+     data-descripcion="Perfil de terminación para protección y acabado de esquinas"
+     data-categoria="terminacion"
+     data-type="terminacion">
+
+    <div class="card h-100">
+
+        <img src="img/Pino Finger/esquinero.jpg"
+             class="card-img-top"
+             alt="Esquinero de pino finger para terminaciones">
+
+        <div class="card-body">
+            <h5 class="product-title">Esquinero de Pino Finger</h5>
+
+            <p class="product-desc">
+                Perfil de terminación fabricado en pino finger, ideal para proteger esquinas y
+                lograr un acabado prolijo y resistente en muros y revestimientos interiores.
+            </p>
+
+            <ul class="product-specs">
+                <li>Medidas: 28 x 28 mm</li>
+                <li>Largo: 3 metros</li>
+                <li>Material: Pino Finger</li>
+                <li>Uso: Terminación interior</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20el%20Esquinero%20de%20Pino%20Finger"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="Productos/esquinero_pino.html" class="btn btn-outline-dark">
+                Ver
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 26 Tornillos -->
+ <div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Tornillos para Construcción"
+     data-descripcion="Tornillos para fijación de revestimientos, estructuras livianas y techumbre"
+     data-categoria="accesorios"
+     data-type="accesorios">
+
+    <div class="card h-100">
+
+        <img src="img/tornillos/todos.jpg"
+             class="card-img-top"
+             alt="Tornillos para construcción y techumbre">
+
+        <div class="card-body">
+            <h5 class="product-title">Tornillos para Construcción</h5>
+
+            <p class="product-desc">
+                Tornillos de alta resistencia ideales para instalación de revestimientos,
+                estructuras livianas y trabajos de techumbre. Disponibles en distintas medidas según necesidad.
+            </p>
+
+            <ul class="product-specs">
+                <li>1 5/8” – Para fijaciones generales</li>
+                <li>2” – Mayor sujeción en estructuras</li>
+                <li>Punta espada – Especial para techumbre</li>
+                <li>Material: Acero galvanizado</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20los%20tornillos%20para%20construcción"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="Productos/tornillos.html" class="btn btn-outline-dark">
+                Ver Opciones
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTO 27 adhesivos y selladores --> 
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Adhesivos y Selladores"
+     data-descripcion="Soluciones de fijación y sellado para construcción y remodelación"
+     data-categoria="accesorios"
+     data-type="accesorios">
+
+    <div class="card h-100">
+
+        <img src="img/adhesivo/ambos.jpg"
+             class="card-img-top"
+             alt="Adhesivos y selladores para construcción">
+
+        <div class="card-body">
+            <h5 class="product-title">Adhesivos y Selladores</h5>
+
+            <p class="product-desc">
+                Soluciones de alta resistencia para fijación, sellado y terminaciones en
+                proyectos de construcción y remodelación. Excelente adherencia y durabilidad
+                en diversas superficies.
+            </p>
+
+            <ul class="product-specs">
+                <li>Formatos: paté y tubo</li>
+                <li>Alta adherencia y sellado efectivo</li>
+                <li>Uso interior y exterior</li>
+                <li>Ideal para revestimientos y paneles</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20adhesivos%20y%20selladores"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/adhesivo.html" class="btn btn-outline-dark">
+                Ver Opciones
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- PRODUCTO 28 Discos de corte fino -->
+
+<div class="col-md-4 mb-4 product-item producto"
+     data-nombre="Disco de Corte Fino Bosch"
+     data-descripcion="Disco de corte fino para metal, preciso y de alta durabilidad"
+     data-categoria="accesorios"
+     data-type="accesorios">
+
+    <div class="card h-100">
+
+        <img src="img/disco/disco.jpg"
+             class="card-img-top"
+             alt="Disco de corte fino Bosch">
+
+        <div class="card-body">
+            <h5 class="product-title">Disco de Corte Fino Bosch</h5>
+
+            <p class="product-desc">
+                Disco de corte fino de alta precisión, ideal para trabajos limpios y controlados.
+                Muy utilizado para cortes en planchas de PVC, Metal Siding y otros materiales sintéticos,
+                logrando un acabado parejo y sin rebabas. También es apto para cortes en metal liviano.
+            </p>
+
+
+            <ul class="product-specs">
+                <li>Corte fino y controlado</li>
+                <li>Ideal para PVC, Pisos SPC y Metal Siding</li>
+                <li>Buen acabado, sin rebabas</li>
+                <li>Compatible con esmeriles angulares</li>
+                <li>Uso profesional</li>
+            </ul>
+        </div>
+
+        <div class="card-footer text-center bg-white">
+            <a href="https://wa.me/56931018433?text=Hola,%20estoy%20interesado%20en%20el%20disco%20de%20corte%20fino%20Bosch"
+               class="btn btn-whatsapp"
+
+               target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Whatsapp
+            </a>
+
+            <a href="/Productos/disco_corte.html" class="btn btn-outline-dark">
+                Ver
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+        <!-- AGREGA MÁS PRODUCTOS AQUÍ -->
+
+    </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<div id="footer"></div>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/filtros_productos.js"></script>
+<script src="/js/footer.js"></script>
+
+
+</body>
+</html>

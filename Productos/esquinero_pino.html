@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Esquinero de Pino Finger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body class="page-fade">
+
+
+<!-- MODAL ZOOM -->
+<div class="modal fade" id="imgModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+            <button type="button"
+                    class="btn-close btn-close-white ms-auto me-2 mt-2"
+                    data-bs-dismiss="modal"></button>
+            <img id="modalImage" class="img-fluid rounded w-100">
+        </div>
+    </div>
+</div>
+
+<!-- NAV -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a href="../categorias.html" class="navbar-brand">← Volver al catálogo</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1>Esquinero de Pino Finger</h1>
+
+        <div class="hero-info">
+            <ul class="specs-list">
+                <li><strong>Material:</strong> Pino Finger Joint</li>
+                <li><strong>Medidas:</strong> 28 x 28 mm</li>
+                <li><strong>Largo:</strong> 3 metros</li>
+                <li><strong>Uso:</strong> Protección y terminación de esquinas</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- DESCRIPCIÓN -->
+<section class="container mt-5">
+    <h3 class="mb-3">Descripción del producto</h3>
+
+    <p>
+        El <strong>esquinero de pino finger</strong> es un perfil de terminación diseñado
+        para proteger y embellecer las esquinas exteriores e interiores de muros,
+        pilares y tabiques.
+    </p>
+
+    <p>
+        Fabricado en pino finger joint, ofrece mayor estabilidad dimensional,
+        excelente terminación superficial y menor riesgo de deformaciones.
+    </p>
+
+    <p>
+        Ideal para proyectos habitacionales y comerciales. Puede ser
+        pintado, barnizado o vitrificado según el acabado deseado.
+    </p>
+</section>
+
+<!-- APLICACIONES -->
+<section class="container mt-5">
+    <h4 class="mb-4">Formato Disponible</h4>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Pino Finger/esquinero.jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Esquinero</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="text-center my-5">
+    <h3>¿Quieres cotizar esquineros de pino finger?</h3>
+    <p>Escríbenos para precios por unidad o al por mayor.</p>
+
+    <a href="https://wa.me/56950159995?text=Hola%2C%20quiero%20cotizar%20esquinero%20de%20pino%20finger"
+       class="btn btn-success btn-lg mt-3">
+        <i class="bi bi-whatsapp me-2"></i>Cotizar por WhatsApp
+    </a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<div id="footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Scripts propios -->
+<script src="../js/footer.js"></script>
+<script src="../js/producto.js"></script>
+
+</body>
+</html>

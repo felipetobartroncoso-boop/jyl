@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Disco de Corte Fino Bosch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body class="page-fade">
+
+
+<!-- MODAL ZOOM -->
+<div class="modal fade" id="imgModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+            <button type="button"
+                    class="btn-close btn-close-white ms-auto me-2 mt-2"
+                    data-bs-dismiss="modal"></button>
+            <img id="modalImage" class="img-fluid rounded w-100">
+        </div>
+    </div>
+</div>
+
+<!-- NAV -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a href="../categorias.html" class="navbar-brand">← Volver al catálogo</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1>Disco de Corte Fino Bosch</h1>
+
+        <div class="hero-info">
+            <ul class="specs-list">
+                <li><strong>Marca:</strong> Bosch</li>
+                <li><strong>Tipo:</strong> Disco de corte fino</li>
+                <li><strong>Uso:</strong> Corte de metal</li>
+                <li><strong>Formato:</strong> Disco para esmeril angular</li>
+                <li><strong>Aplicación:</strong> Uso profesional y doméstico</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- DESCRIPCIÓN -->
+<section class="container mt-5">
+    <h3 class="mb-3">Descripción del producto</h3>
+
+    <p>
+        El <strong>disco de corte fino Bosch</strong> está diseñado para realizar
+        cortes precisos, rápidos y limpios, siendo ampliamente utilizado en
+        trabajos con <strong>planchas de PVC, pisos SPC, Metal Siding y otros materiales sintéticos</strong>,
+        donde se requiere un acabado parejo y sin rebabas.
+    </p>
+
+    <p>
+        Su <strong>espesor reducido</strong> permite un mayor control durante el corte,
+        disminuye la vibración y facilita un avance más suave, lo que se traduce
+        en cortes más prolijos y menor desgaste del material. También es apto
+        para cortes en <strong>metal liviano</strong>, manteniendo un buen rendimiento.
+    </p>
+
+    <p>
+        Fabricado bajo los altos estándares de calidad Bosch, este disco ofrece
+        <strong>alto rendimiento, seguridad y larga vida útil</strong>, siendo una
+        herramienta confiable tanto para uso profesional como para trabajos de
+        instalación y terminación.
+    </p>
+</section>
+
+
+<!-- APLICACIONES -->
+<section class="container mt-5">
+    <h4 class="mb-4">Formato Disponible</h4>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/disco/disco.jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Disco de Corte Fino</h5>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- CTA -->
+<section class="text-center my-5">
+    <h3>¿Quieres cotizar discos de corte Bosch?</h3>
+    <p>Escríbenos para precios por unidad o al por mayor.</p>
+
+    <a href="https://wa.me/56950159995?text=Hola%2C%20quiero%20cotizar%20disco%20de%20corte%20fino%20Bosch"
+       class="btn btn-success btn-lg mt-3">
+        <i class="bi bi-whatsapp me-2"></i>Cotizar por WhatsApp
+    </a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<div id="footer"></div>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Scripts propios -->
+<script src="../js/footer.js"></script>
+<script src="../js/producto.js"></script>
+
+</body>
+</html>

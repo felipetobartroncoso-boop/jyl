@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Planchas de PVC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="page-fade">
+
+
+<!-- ================= MODAL ZOOM ================= -->
+<div class="modal fade" id="imgModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+            <button type="button"
+                    class="btn-close btn-close-white ms-auto me-2 mt-2"
+                    data-bs-dismiss="modal"></button>
+            <img id="modalImage" class="img-fluid rounded w-100">
+        </div>
+    </div>
+</div>
+
+<!-- ================= NAV ================= -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a href="../categorias.html" class="navbar-brand">← Volver al catálogo</a>
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="container">
+        <h1>Planchas de PVC</h1>
+
+        <div class="hero-info">
+            <ul class="specs-list">
+                <li><strong>Medidas:</strong> 122 x 244 cm</li>
+                <li><strong>Espesor:</strong> 3 mm</li>
+                <li><strong>Material:</strong> PVC rígido</li>
+                <li><strong>Uso:</strong> Revestimientos, cielos y aplicaciones decorativas</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ================= DESCRIPCIÓN ================= -->
+<section class="container mt-5">
+    <h3 class="mb-3">Descripción del producto</h3>
+
+    <p>
+        Las <strong>planchas de PVC</strong> son una solución liviana, resistente y versátil,
+        ideales para revestimientos interiores, cielos falsos y aplicaciones decorativas.
+    </p>
+
+    <p>
+        Gracias a su resistencia a la humedad, no se deforman ni se pudren,
+        siendo una excelente alternativa a la madera o el MDF.
+    </p>
+
+    <p>
+        Son fáciles de cortar, instalar y mantener, permitiendo un acabado limpio
+        y profesional en todo tipo de proyectos.
+    </p>
+</section>
+
+<!-- ================= GALERÍA ================= -->
+<section class="container mt-5">
+    <h4 class="mb-4">🎨 Diseños disponibles</h4>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Pvc/Pvc marmol 1 (1).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">KL-8066</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Pvc/Pvc marmol 3 (3).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">KL-8804</h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Pvc/Pvc marmol 4 (1).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">KL-8030</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Pvc/Pvc marmol 5 (1).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">KL-8087-1</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Pvc/Pvc texturizada 2 (3).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Texturada Gris</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Pvc/Pvc texturizada 1 (1).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Textuada Beige</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Nuevas Imagenes/PVC/pvc (3).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">G-01</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Nuevas Imagenes/PVC/pvc (5).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">KL-8225</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Nuevas Imagenes/PVC/pvc (6).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">KL-8265</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Nuevas Imagenes/PVC/pvc (14).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">S1615</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Nuevas Imagenes/PVC/pvc (15).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">G-07</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Nuevas Imagenes/PVC/pvc (19).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">G-04</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Nuevas Imagenes/PVC/pvc (23).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">G-07</h5>
+                </div>
+            </div>
+        </div>   
+        
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Nuevas Imagenes/PVC/pvc (24).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">KL8265</h5>
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Nuevas Imagenes/PVC/pvc (25).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Beige Gold</h5>
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Nuevas Imagenes/PVC/pvc (29).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gold Gris</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Nuevas Imagenes/PVC/pvc.jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gold</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="text-center my-5">
+    <h3>¿Quieres cotizar estas planchas de PVC?</h3>
+    <p>Te asesoramos según tu proyecto y cantidad necesaria.</p>
+
+    <a href="https://wa.me/56950159995?text=Hola%2C%20quiero%20cotizar%20Planchas%20de%20PVC" 
+        class="btn btn-success btn-lg mt-3">
+        <i class="bi bi-whatsapp me-2"></i>Cotizar por WhatsApp
+    </a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<div id="footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function showImage(src) {
+    document.getElementById("modalImage").src = src;
+}
+</script>
+
+<script>
+fetch("../footer.html")
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+</body>
+</html>

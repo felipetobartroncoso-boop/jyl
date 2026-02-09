@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Planchas OSB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="page-fade">
+
+
+<!-- ================= MODAL ZOOM ================= -->
+<div class="modal fade" id="imgModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+            <button type="button"
+                    class="btn-close btn-close-white ms-auto me-2 mt-2"
+                    data-bs-dismiss="modal"></button>
+            <img id="modalImage" class="img-fluid rounded w-100">
+        </div>
+    </div>
+</div>
+
+<!-- ================= NAV ================= -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a href="../categorias.html" class="navbar-brand">← Volver al catálogo</a>
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="container">
+        <h1>Planchas OSB</h1>
+
+        <div class="hero-info">
+            <ul class="specs-list">
+                <li><strong>Medidas:</strong> 122 x 244 cm</li>
+                <li><strong>Espesor:</strong> 9,5 mm</li>
+                <li><strong>Material:</strong> Tablero OSB (Oriented Strand Board)</li>
+                <li><strong>Uso:</strong> Construcción, tabiques y revestimientos</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ================= DESCRIPCIÓN ================= -->
+<section class="container mt-5">
+    <h3 class="mb-3">Descripción del producto</h3>
+
+    <p>
+        Las <strong>planchas OSB</strong> son tableros estructurales fabricados a partir de
+        virutas de madera orientadas y prensadas con resinas de alta resistencia.
+    </p>
+
+    <p>
+        Son ampliamente utilizadas en construcción por su firmeza, estabilidad y versatilidad,
+        ideales para muros, tabiques, entrepisos y revestimientos interiores.
+    </p>
+
+    <p>
+        Ofrecen una excelente relación entre resistencia, durabilidad y costo,
+        siendo una alternativa eficiente frente a otros tableros tradicionales.
+    </p>
+</section>
+
+<!-- ================= GALERÍA ================= -->
+<section class="container mt-5">
+    <h4 class="mb-4">🎨 Modelos disponibles</h4>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../img/Osb/osb 9,5mm (2).jpg"
+                     class="card-img-top gallery-img"
+                     onclick="showImage(this.src)"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imgModal">
+                <div class="card-body text-center">
+                    <h5 class="card-title">OSB Estructural 9,5mm</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="text-center my-5">
+    <h3>¿Quieres cotizar planchas OSB?</h3>
+    <p>Te asesoramos según tu proyecto y cantidad necesaria.</p>
+
+    <a href="https://wa.me/56950159995?text=Hola%2C%20quiero%20cotizar%20Osb"
+        class="btn btn-success btn-lg mt-3">
+        <i class="bi bi-whatsapp me-2"></i>Cotizar por WhatsApp
+    </a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<div id="footer"></div>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Scripts propios -->
+<script src="../js/footer.js"></script>
+<script src="../js/producto.js"></script>
+
+</body>
+</html>
